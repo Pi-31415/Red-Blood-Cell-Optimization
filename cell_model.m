@@ -38,11 +38,11 @@ partop = surf(X,Y,Z);
 
 Z = -((X.^2 + Y.^2)/(a.^2))-h;
 %Surf plot
- parbottom = surf(X,Y,Z);
+parbottom = surf(X,Y,Z);
 
 
 
-% Plots the cylinder
+% Plots the torus
 funx = @(u,v) (R-r.*cos(B)).* cos(u);
 funy = @(u,v) (R-r.*cos(B)).* sin(u);
 funz = @(u,v) v;
@@ -57,5 +57,5 @@ ylabel('y')
 zlabel('z')
 
 axis([-(R+r) (R+r) -(R+r) (R+r) -(R+r) (R+r)]);
-% camlight
+ camlight
 
